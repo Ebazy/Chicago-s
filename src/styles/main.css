@@ -1,0 +1,53 @@
+* {
+   box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+}
+
+.header {
+    background: hotpink;
+}
+
+.header .header__inner {
+    margin: auto;
+    max-width: 62rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    height: 5.5rem;
+    width: 9.5rem;
+    display: flex;
+    margin: 1.25rem;
+    justify-content: center;
+}
+
+.header__pic {
+    height: 5.5rem;
+    width: 9.5rem;
+    align-self: center;
+}
+
+.header .navbar {
+    align-self: flex-end;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar__item {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: color, background-color .4s;
+    padding: .7rem;
+}
+
+.navbar__item--special, .navbar__item:hover {
+    color: black;
+    background: limegreen;
+}
