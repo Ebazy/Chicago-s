@@ -6,8 +6,21 @@ html, body {
     font-size: 16px;
 }
 
+.header__bgc {
+    background-image: url("/src/assets/pexels-kelly-2869205.jpg");
+    background-repeat: repeat-x;
+}
+
+/*.header__bgc:before {*/
+/*    background-color: black;*/
+/*    opacity: .4;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    min-height: 100vh;*/
+/*}*/
+
 .header {
-    background: hotpink;
 }
 
 .header .header__inner {
@@ -50,4 +63,8 @@ html, body {
 .navbar__item--special, .navbar__item:hover {
     color: black;
     background: limegreen;
+}
+
+.about-us {
+    min-height: 100vh;
 }
