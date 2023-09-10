@@ -1,6 +1,7 @@
 :root {
     --main-font: sans-serif;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -96,7 +97,7 @@ html, body {
 }
 
 .about-us .about-us__hdl {
-    margin:4rem auto;
+    margin: 4rem auto;
     color: white;
     font-size: 7rem;
     font-family: var(--main-font);
@@ -112,4 +113,118 @@ html, body {
     text-indent: 2rem;
     line-height: 2rem;
     text-shadow: .25rem .25rem .25rem rgba(255, 255, 255, .4);
+}
+
+.main {
+
+}
+
+.menu {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/src/assets/PXL_20220312_003121533-scaled.jpg");
+    position: relative;
+}
+
+.menu:before {
+    content: '';
+    background-color: black;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu .menu__inner {
+    display: flex;
+    max-width: 68rem;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu .menu__hdl {
+    text-align: center;
+    font-size: 7rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: red;
+    margin: 4rem auto;
+    text-shadow: .25rem .25rem .25rem rgba(255, 0, 0, .7);
+}
+
+.menu .menu__text {
+    text-align: center;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin: 4rem auto;
+    text-shadow: .25rem .25rem .25rem rgba(255, 255, 255, .5);
+}
+
+.menu .menu__boxes {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 4rem;
+    background-color: #131316 ;
+}
+
+.menu .menu__more--btn {
+    display: inline-flex;
+    margin: 2rem 3rem;
+    min-width: 8rem;
+    min-height: 3rem;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    font-weight: bold;
+    transition: all .4s;
+}
+
+.menu .menu__more--btn:hover {
+    background-color: white;
+    color: red;
+}
+
+.menu .menu__box {
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 18rem;
+    max-width: 18rem;
+    justify-content: space-around;
+    transition: all .4s;
+    border: 2px solid crimson;
+}
+
+.menu .menu__box:hover {
+    box-shadow: .1rem .1rem .25rem .25rem rgba(212, 15, 18, 0.99);
+}
+
+.menu .box__hdl {
+    color: white;
+    text-align: center;
+}
+
+.menu .box__text {
+    color: white;
+    text-align: center;
+}
+
+.menu .burger__pic {
+    max-width: 15rem;
+    box-shadow: .1rem .1rem .25rem .25rem rgba(255, 255, 255, .6);
 }
