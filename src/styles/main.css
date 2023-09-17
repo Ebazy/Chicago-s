@@ -305,7 +305,7 @@ html, body {
 }
 
 .gallery .gallery__main {
-    margin: 6rem auto;
+    background-color: #131316;
 }
 
 
@@ -315,6 +315,7 @@ html, body {
     font-size: 5rem;
     font-family: var(--main-font);
     color: red;
+    text-shadow: 0 0 .5rem rgba(255, 0, 0, .7);
 }
 
 .gallery .gallery__text {
@@ -323,13 +324,19 @@ html, body {
     font-size: 1.2rem;
     font-family: var(--main-font);
     color: white;
+    text-shadow: 0 0 .5rem rgba(255, 255, 255, .7);
+}
+
+.gallery .gallery__photo {
+    width: 30%;
+    margin-left: 2rem;
 }
 
 .gallery .slider__slides {
     position: relative;
     min-height: 18.75rem;
     overflow: hidden;
-    width: 40%;
+    width: 28%;
     left: calc(50% - 13.51375rem)
 }
 
@@ -374,4 +381,64 @@ html, body {
 }
 
 .gallery .slider__btn--next {
+}
+
+.contact {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact .contact__inner {
+    width: 75%;
+}
+
+.contact .contact__hdl {
+    margin: 0 auto;
+    padding: 10rem 0;
+    color: white;
+    text-align: center;
+    font-size: 7rem;
+    font-family: var(--main-font);
+    text-shadow: 0 0 .5rem rgba(255, 255, 255, .7);
+}
+
+.contact .contact__boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.contact .contact__box {
+    background-color: #131316;
+    width: 20rem;
+    height: 10rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: .5rem;
+}
+
+.contact .contact__img {
+}
+
+.contact .contact__text {
+    color: white;
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    text-shadow: 0 0 .5rem rgba(255, 255, 255, .7);
+}
+
+.contact .contact__hdl--text {
+    color: white;
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    font-weight: bolder;
+    text-shadow: 0 0 .5rem rgba(255, 255, 255, .7);
 }
