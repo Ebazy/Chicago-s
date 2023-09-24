@@ -336,8 +336,8 @@ html, body {
     position: relative;
     min-height: 18.75rem;
     overflow: hidden;
-    width: 28%;
-    left: calc(50% - 13.51375rem)
+    width: 30%;
+    left: calc(50% - 16.51375rem)
 }
 
 .gallery .slider__slide {
@@ -408,17 +408,16 @@ html, body {
 
 .contact .contact__boxes {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 3rem;
 }
 
 .contact .contact__box {
-    background-color: #131316;
     width: 20rem;
     height: 10rem;
     margin: 2rem;
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
@@ -426,6 +425,8 @@ html, body {
 }
 
 .contact .contact__img {
+    height: 3rem;
+    justify-self: flex-end;
 }
 
 .contact .contact__text {
